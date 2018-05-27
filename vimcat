@@ -251,6 +251,8 @@ fi
 if [ -z "$vimcatrc" ]; then
     if [ -f ~/.vimcatrc ]; then
         vimcatrc=~/.vimcatrc
+    elif [ -f ~/.vim/vimcatrc ]; then
+        vimcatrc=~/.vim/vimcatrc
     else
         vimcatrc=
     fi
